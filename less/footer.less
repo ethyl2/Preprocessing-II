@@ -12,9 +12,8 @@
 
   .img-container {
     display:none;
-  }
-  @media @mobile {
-    .img-container {
+  
+    @media @mobile {
       display:flex;
       justify-content: center;
       width: 60%;
@@ -22,6 +21,31 @@
       img {
         .spin(10s, 6);
       }
+    }
+  }
+  .content-section {
+    background: @main-bg;
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 2rem;
+    @media @mobile {
+      width: 90%;
+    }
+    h2 {
+      padding: 2rem;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 1rem 0;
+      line-height: 2rem;
+      margin: 1rem 0;
+    }
+    label {
+      font-size: 2rem;
+    }
+    button {
+      .cta-btn();
     }
   }
 }

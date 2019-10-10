@@ -7,16 +7,19 @@
   <title>Fun Bus Travel Agency - Solution</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  <script>
+    document.addEventListener("touchstart", function() {},false);
+  </script>
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
-<body ontouchstart="">
+<body>
 
   <div class="top-container">
     <h1>Fun Bus</h1>
@@ -76,17 +79,17 @@
       <div class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <div class="btn"><a href="#contact">Sign Me Up!</a></div>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <div class="btn"><a href="#contact">Sign Me Up!</a></div>
       </div>
       <div class="destination">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <div class="btn"><a href="#contact">Sign Me Up!</a></div>
       </div>
     </section>
   </div><!-- container -->
@@ -96,6 +99,28 @@
       <a href="https://www.freepik.com/free-vector/collection-different-suns_818508.htm#page=1&query=sun&position=36#position=36&page=1&query=sun" target="_blank">
       <img src="img/sun.gif" alt="sun logo" /></a>
     </div>
+    <section id="contact" class="content-section">
+        <h2>Send Me More Info!</h2>
+
+        <form method="POST" action="https://formspree.io/xdqzoqqm">
+          <label for="name">My Name</label>
+          <input type="name" name="name"><br />
+          <label for="vacation">My Vacation</label>
+          <select name="Vacation">
+            <option value="volvo">Fun in the Sun</option>
+            <option value="saab">Mountain Excursion</option>
+            <option value="fiat">Island Getaway</option>
+          </select><br /> 
+          <label for="phone">My Phone</label>
+          <input type="tel" name="phone"><br />
+          <label for="email">My Email</label>
+          <input type="email" name="email"><br />
+          <label for="message">Special Instructions</label>
+          <textarea name="message"></textarea><br />
+          <button type="submit">Send</button>
+        </form>
+    </section> <!-- Close #Contact -->
+
     <p>Copyright Fun Bus 2018</p>
   </footer>
 
