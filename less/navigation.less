@@ -1,1 +1,32 @@
 // Navigation Styles here
+.top-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 5rem auto;
+    padding-bottom: 3rem;
+    border-bottom: 2px dashed @navigation-border;
+    h1 {
+        width: 20%;
+    }
+    nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        width: 50%;
+        a {
+            padding: 0 1rem;
+            text-decoration: none;
+            color: @font-color;
+            font-size: 1.5rem;
+            &:hover {
+                color: lighten(@font-color, 20%);
+            }
+        }
+        .active {
+            font-weight: bold;
+        }
+        
+    }
+}
