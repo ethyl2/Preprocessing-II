@@ -1,3 +1,20 @@
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -226,6 +243,27 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.footer .img-container {
+  display: none;
+}
+@media (max-width: 500px) {
+  .footer .img-container {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .footer .img-container img {
+    animation-name: spinning;
+    -webkit-animation-name: spinning;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 10s;
+    /* Safari 4.0 - 8.0 */
+    animation-duration: 10s;
+    animation-iteration-count: 6;
+    animation-timing-function: linear;
+  }
 }
 @media (max-width: 500px) {
   .home {

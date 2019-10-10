@@ -9,4 +9,19 @@
     font-size: 1.6rem;
     padding: 20px;
   }
+
+  .img-container {
+    display:none;
+  }
+  @media @mobile {
+    .img-container {
+      display:flex;
+      justify-content: center;
+      width: 60%;
+      margin: 0 auto;
+      img {
+        .spin(10s, 6);
+      }
+    }
+  }
 }

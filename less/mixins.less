@@ -1,5 +1,35 @@
 // Mixins in here
 
+// Keyframes animation
+@keyframes spinning {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(30deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-30deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+.spin(@duration: 30s; @count: infinite) {
+    animation-name: spinning;
+    -webkit-animation-name: spinning; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: @duration; /* Safari 4.0 - 8.0 */
+    animation-duration: @duration;
+    animation-iteration-count: @count;
+    animation-timing-function: linear;
+}
+
+// Cta-btn mixin
+
 .cta-btn() {
     background: @button-bg;
     font-size: 2rem;
